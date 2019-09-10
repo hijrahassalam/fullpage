@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <!-- LOAD THE JQUERY -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- LOAD THE BOOTSTRAP -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <!-- LOAD THE FULLPAGE -->
+    <script src="js/fullpage.min.js"></script>
+    <link rel="stylesheet" href="css/fullpage.min.css">
+    <!-- LOAD THE USER DEFINED CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+        <a class="navbar-brand" href="#">ART AND CULTURE CENTER</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Dropdown link
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Link 1</a>
+                      <a class="dropdown-item" href="#">Link 2</a>
+                      <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                  </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Facility</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="#">Admission</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- <div id="navbar"></div> -->
+    <div id="wrapper">
+        <div class="section section1">
+            <!-- <img src="img/1.jpg"> -->
+            <h1>
+                    Section
+                </h1> 
+                <p>
+                    hublahubla
+                </p>
+        </div>
+        <div class="section">
+            <div class="slide">
+                <img src="img/2.jpg">
+            </div>
+            <div class="slide">
+                <img src="img/2-2.jpg"> 
+                </div>
+            <div class="slide">
+                <img src="img/2-3.jpg"> 
+            </div>
+        </div>
+        <div class="section">
+            <img src="img/3.jpg">
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $('#wrapper').fullpage({
+            autoScrolling:true,
+		    scrollHorizontally: true
+        });
+        $.fn.fullpage.setAllowScrolling(true);
+    });
+</script>
+
+</html>

@@ -1,0 +1,19 @@
+#navbar {
+    width: 100%;
+    height: 75px;
+    top : 0px;
+    position: absolute;
+    z-index: 999;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.section1{
+    background: aqua;
+    text-align: center;
+}
+
+div img {
+    width: 100%;
+    height: auto;
+}
