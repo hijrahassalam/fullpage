@@ -15,7 +15,7 @@
     height: auto;
 }
 
-.right {
+#right {
     position:absolute;
     right:0px;
 }
