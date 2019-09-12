@@ -22,8 +22,8 @@
             <li class="nav-item" data-menuanchor="section1">
                 <a class="nav-link" href="#section1" >Home</a>
             </li>
-            <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            <li class="nav-item dropdown" data-menuanchor="section2">
+                    <a class="nav-link dropdown-toggle" href="#section2" id="navbardrop" data-toggle="dropdown">
                       Faculties
                     </a>
                     <div class="dropdown-menu">
@@ -36,8 +36,8 @@
                       <a class="dropdown-item" href="#">Management Science</a>
                     </div>
                   </li>
-                  <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  <li class="nav-item dropdown" data-menuanchor="section3">
+                        <a class="nav-link dropdown-toggle" href="#section3" id="navbardrop" data-toggle="dropdown">
                           Officess
                         </a>
                         <div class="dropdown-menu">
@@ -46,11 +46,11 @@
                           <a class="dropdown-item" href="#">Art and Culture Center</a>
                         </div>
                       </li>
-            <li class="nav-item" data-menuanchor="section3">
-                <a class="nav-link" href="#section3">About</a>
+            <li class="nav-item" data-menuanchor="section4">
+                <a class="nav-link" href="#section4">About</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+            <li class="nav-item" data-menuanchor="section5">
+                <a class="nav-link" href="#section5">Contact</a>
             </li>
         </ul>
         <div id="right">
@@ -70,38 +70,42 @@
         <!-- FACULTY SLIDES  -->
         <div class="section slide" id="section2" >
             <div class="slide">
-                <img src="img/2.jpg" height="500px">
+                <img src="img/2.jpg" height="auto">
             </div>
             <div class="slide">
-                <img src="img/2-2.jpg" height="500px"> 
+                <img src="img/2-2.jpg" height="auto"> 
                 </div>
             <div class="slide">
-                <img src="img/2-3.jpg" height="500px"> 
+                <img src="img/2-3.jpg" height="auto"> 
             </div>
         </div>
         <!-- OFFICES SLIDES -->
         <div class="section slide" id="section3" >
             
             <div class="slide">
-                <img src="img/4-1.jpg" height="500px">
+                <img src="img/4-1.jpg" height="auto">
             </div>
             <div class="slide">
-                <img src="img/4-2.jpg" height="500px"> 
+                <img src="img/4-2.jpg" height="auto"> 
                 </div>
             <div class="slide">
-                <img src="img/4-3.jpg" height="500px"> 
+                <img src="img/4-3.jpg" height="auto"> 
             </div>
         </div>
 
-        <div class="section">
-            <img src="img/3.jpg" height="500px">
+        <div class="section" id="section4">
+            <img src="img/3.jpg" height="auto">
         </div>
+        <div class="section section1" id="section5">
+                <h1>Last Section</h1> 
+                <p>hublahubla</p>
+            </div>
     </div>
 </body>
 <script>
     $(document).ready(function(){
         $('#wrapper').fullpage({
-            menu: '#menu',
+            
             anchors: ['section1', 'section2', 'section3'],
             autoScrolling:true,
 		    scrollHorizontally: true,
